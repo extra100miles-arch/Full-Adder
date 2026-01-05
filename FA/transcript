@@ -1,0 +1,125 @@
+# vsim -c work.tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.my_package
+# Loading work.tb_sv_unit
+# Loading work.tb(fast)
+# Loading work.add(fast)
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+#  
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# ** Error: (vsim-PLI-3494) acc_fetch_size(): The object_handle parameter is not a handle to a net, register, or port, or a bit-select thereof.    : tb.sv(19)
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Error: (vsim-PLI-3494) acc_fetch_size(): The object_handle parameter is not a handle to a net, register, or port, or a bit-select thereof.    : tb.sv(19)
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# UVM_INFO @ 0: reporter [RNTST] Running test Test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               Test                    -     @460 
+#   e                        Environment             -     @473 
+#     a                      Agent                   -     @496 
+#       d                    Driver                  -     @520 
+#         rsp_port           uvm_analysis_port       -     @535 
+#         sqr_pull_port      uvm_seq_item_pull_port  -     @527 
+#       m                    Monitor                 -     @505 
+#         send               uvm_analysis_port       -     @512 
+#       seq                  uvm_sequencer           -     @543 
+#         rsp_export         uvm_analysis_export     -     @550 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @644 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     s                      Scoreboard              -     @481 
+#       recv                 uvm_analysis_imp        -     @488 
+# --------------------------------------------------------------
+# 
+# UVM_INFO Generator.sv(19) @ 0: uvm_test_top.e.a.seq@@gen [GEN] Data send to Driver|a : 0|b : 0|cin : 0
+# UVM_INFO Driver.sv(29) @ 0: uvm_test_top.e.a.d [DRV] Trigger DUT|a: 0|b : 0|cin : 0|
+# UVM_INFO Monitor.sv(35) @ 10: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 0|B :0|cin : 0|sum :0|cout:0
+# UVM_INFO Scoreboard.sv(23) @ 10: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 0|b : 0|cin: 0|sum :0|cout: 0|
+# UVM_INFO Scoreboard.sv(26) @ 10: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Generator.sv(19) @ 10: uvm_test_top.e.a.seq@@gen [GEN] Data send to Driver|a : 0|b : 0|cin : 0
+# UVM_INFO Driver.sv(29) @ 10: uvm_test_top.e.a.d [DRV] Trigger DUT|a: 0|b : 0|cin : 0|
+# UVM_INFO Monitor.sv(35) @ 20: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 0|B :0|cin : 0|sum :0|cout:0
+# UVM_INFO Scoreboard.sv(23) @ 20: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 0|b : 0|cin: 0|sum :0|cout: 0|
+# UVM_INFO Scoreboard.sv(26) @ 20: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Generator.sv(19) @ 20: uvm_test_top.e.a.seq@@gen [GEN] Data send to Driver|a : 1|b : 1|cin : 1
+# UVM_INFO Driver.sv(29) @ 20: uvm_test_top.e.a.d [DRV] Trigger DUT|a: 1|b : 1|cin : 1|
+# UVM_INFO Monitor.sv(35) @ 30: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 1|B :1|cin : 1|sum :1|cout:1
+# UVM_INFO Scoreboard.sv(23) @ 30: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 1|b : 1|cin: 1|sum :1|cout: 1|
+# UVM_INFO Scoreboard.sv(26) @ 30: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Generator.sv(19) @ 30: uvm_test_top.e.a.seq@@gen [GEN] Data send to Driver|a : 1|b : 1|cin : 1
+# UVM_INFO Driver.sv(29) @ 30: uvm_test_top.e.a.d [DRV] Trigger DUT|a: 1|b : 1|cin : 1|
+# UVM_INFO Monitor.sv(35) @ 40: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 1|B :1|cin : 1|sum :1|cout:1
+# UVM_INFO Scoreboard.sv(23) @ 40: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 1|b : 1|cin: 1|sum :1|cout: 1|
+# UVM_INFO Scoreboard.sv(26) @ 40: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Generator.sv(19) @ 40: uvm_test_top.e.a.seq@@gen [GEN] Data send to Driver|a : 1|b : 1|cin : 0
+# UVM_INFO Driver.sv(29) @ 40: uvm_test_top.e.a.d [DRV] Trigger DUT|a: 1|b : 1|cin : 0|
+# UVM_INFO Monitor.sv(35) @ 50: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 1|B :1|cin : 0|sum :0|cout:1
+# UVM_INFO Scoreboard.sv(23) @ 50: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 1|b : 1|cin: 0|sum :0|cout: 1|
+# UVM_INFO Scoreboard.sv(26) @ 50: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Generator.sv(19) @ 50: uvm_test_top.e.a.seq@@gen [GEN] Data send to Driver|a : 1|b : 1|cin : 0
+# UVM_INFO Driver.sv(29) @ 50: uvm_test_top.e.a.d [DRV] Trigger DUT|a: 1|b : 1|cin : 0|
+# UVM_INFO Monitor.sv(35) @ 60: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 1|B :1|cin : 0|sum :0|cout:1
+# UVM_INFO Scoreboard.sv(23) @ 60: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 1|b : 1|cin: 0|sum :0|cout: 1|
+# UVM_INFO Scoreboard.sv(26) @ 60: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Generator.sv(19) @ 60: uvm_test_top.e.a.seq@@gen [GEN] Data send to Driver|a : 1|b : 1|cin : 0
+# UVM_INFO Driver.sv(29) @ 60: uvm_test_top.e.a.d [DRV] Trigger DUT|a: 1|b : 1|cin : 0|
+# UVM_INFO Monitor.sv(35) @ 70: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 1|B :1|cin : 0|sum :0|cout:1
+# UVM_INFO Scoreboard.sv(23) @ 70: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 1|b : 1|cin: 0|sum :0|cout: 1|
+# UVM_INFO Scoreboard.sv(26) @ 70: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Generator.sv(19) @ 70: uvm_test_top.e.a.seq@@gen [GEN] Data send to Driver|a : 0|b : 1|cin : 0
+# UVM_INFO Driver.sv(29) @ 70: uvm_test_top.e.a.d [DRV] Trigger DUT|a: 0|b : 1|cin : 0|
+# UVM_INFO Monitor.sv(35) @ 80: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 0|B :1|cin : 0|sum :1|cout:0
+# UVM_INFO Scoreboard.sv(23) @ 80: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 0|b : 1|cin: 0|sum :1|cout: 0|
+# UVM_INFO Scoreboard.sv(26) @ 80: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Monitor.sv(35) @ 90: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 0|B :1|cin : 0|sum :1|cout:0
+# UVM_INFO Scoreboard.sv(23) @ 90: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 0|b : 1|cin: 0|sum :1|cout: 0|
+# UVM_INFO Scoreboard.sv(26) @ 90: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Monitor.sv(35) @ 100: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 0|B :1|cin : 0|sum :1|cout:0
+# UVM_INFO Scoreboard.sv(23) @ 100: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 0|b : 1|cin: 0|sum :1|cout: 0|
+# UVM_INFO Scoreboard.sv(26) @ 100: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Monitor.sv(35) @ 110: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 0|B :1|cin : 0|sum :1|cout:0
+# UVM_INFO Scoreboard.sv(23) @ 110: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 0|b : 1|cin: 0|sum :1|cout: 0|
+# UVM_INFO Scoreboard.sv(26) @ 110: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO Monitor.sv(35) @ 120: uvm_test_top.e.a.m [MON] Data send to scoreboard|A : 0|B :1|cin : 0|sum :1|cout:0
+# UVM_INFO Scoreboard.sv(23) @ 120: uvm_test_top.e.s [SCO] Data Received from Monitor|a : 0|b : 1|cin: 0|sum :1|cout: 0|
+# UVM_INFO Scoreboard.sv(26) @ 120: uvm_test_top.e.s [SCO] Test PASSED
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 120: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   55
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRV]     8
+# [GEN]     8
+# [MON]    12
+# [RNTST]     1
+# [SCO]    24
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_root.svh(392)
+#    Time: 120 ns  Iteration: 44  Instance: /tb

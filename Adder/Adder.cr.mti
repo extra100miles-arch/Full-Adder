@@ -1,0 +1,12 @@
+{D:/UVM Practice/Adder/add_tb.sv} {2 {vlog -work work -vopt -sv -nocovercells {D:\UVM Practice\Adder\add_tb.sv}
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src from import uvm_pkg
+-- Compiling package add_tb_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.0p1 Built-in)
+** Warning: D:\UVM Practice\Adder\add_tb.sv(44): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling module add_tb
+
+Top level modules:
+	add_tb
+
+} {} {}}

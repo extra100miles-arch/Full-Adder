@@ -1,0 +1,49 @@
+{D:/UVM Practice/FA/Monitor.sv} {0 {vlog -work work -vopt -sv -nocovercells {D:/UVM Practice/FA/Monitor.sv}
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src from import uvm_pkg
+** Error: D:/UVM Practice/FA/Monitor.sv(8): Undefined variable: Transaction.
+** Error: D:/UVM Practice/FA/Monitor.sv(15): Invalid type 'Transaction'. Please check the type of the variable 't'.
+** Error: D:/UVM Practice/FA/Monitor.sv(20): Undefined variable: t.
+** Error: D:/UVM Practice/FA/Monitor.sv(20): (vlog-2164) Class or package 'Transaction' not found.
+** Error: D:/UVM Practice/FA/Monitor.sv(20): near "::": syntax error, unexpected ::, expecting ';'
+
+} {4.0 9.0} {}} {D:/UVM Practice/FA/Driver.sv} {0 {vlog -work work -vopt -sv -nocovercells {D:/UVM Practice/FA/Driver.sv}
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src from import uvm_pkg
+** Error: D:/UVM Practice/FA/Driver.sv(4): Undefined variable: Transaction.
+** Error: D:/UVM Practice/FA/Driver.sv(11): Invalid type 'Transaction'. Please check the type of the variable 't'.
+** Error: D:/UVM Practice/FA/Driver.sv(16): Undefined variable: t.
+** Error: D:/UVM Practice/FA/Driver.sv(16): (vlog-2164) Class or package 'Transaction' not found.
+** Error: D:/UVM Practice/FA/Driver.sv(16): near "::": syntax error, unexpected ::, expecting ';'
+
+} {4.0 9.0} {}} {D:/UVM Practice/FA/Environment.sv} {1 {vlog -work work -vopt -sv -nocovercells {D:/UVM Practice/FA/Environment.sv}
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/UVM Practice/FA/add_intf.sv} {1 {vlog -work work -vopt -sv -nocovercells {D:/UVM Practice/FA/add_intf.sv}
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling interface add_intf
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/UVM Practice/FA/add.sv} {1 {vlog -work work -vopt -sv -nocovercells {D:/UVM Practice/FA/add.sv}
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module add
+
+Top level modules:
+	add
+
+} {} {}} {D:/UVM Practice/FA/Generator.sv} {0 {vlog -work work -vopt -sv -nocovercells {D:/UVM Practice/FA/Generator.sv}
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src from import uvm_pkg
+** Error: D:/UVM Practice/FA/Generator.sv(5): Undefined variable: Transaction.
+** Error: D:/UVM Practice/FA/Generator.sv(7): Invalid type 'Transaction'. Please check the type of the variable 't'.
+** Error: D:/UVM Practice/FA/Generator.sv(15): Undefined variable: t.
+** Error: D:/UVM Practice/FA/Generator.sv(15): (vlog-2164) Class or package 'Transaction' not found.
+** Error: D:/UVM Practice/FA/Generator.sv(15): near "::": syntax error, unexpected ::, expecting ';'
+
+} {4.0 9.0} {}}

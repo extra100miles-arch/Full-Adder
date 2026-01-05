@@ -1,0 +1,20 @@
+quit -sim
+vdel -all
+
+vlib work
+vmap work work
+
+vlog -sv add.sv
+vlog -sv add_tb.sv
+
+vsim -uvm add_tb
+
+set TimeUnit ns
+set TimePrecision ps
+
+add wave -group IF  sim:/add_tb/aif/*
+add wave -group DUT sim:/add_tb/dut/*
+add wave sim:/add_tb/aif/clk
+add wave sim:/add_tb/aif/rst
+
+run -all
