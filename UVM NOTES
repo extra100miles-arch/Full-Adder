@@ -1,0 +1,42 @@
+UVM FLOW
+#####################################################################################################
+
+START SIMULATION
+      |
+      v
+run_test()
+      |
+      v
+Create TEST (uvm_test)
+      |
+      v
+TEST.build_phase()
+  - create config objects
+  - fill config values
+  - put config into config_db
+  - create ENV
+      |
+      v
+ENV.build_phase()
+  - get env_config from config_db
+  - decide what components to build
+  - create AGENTS
+      |
+      v
+AGENT.build_phase()
+  - get agent_config from config_db
+  - decide active/passive
+  - create DRIVER / SEQUENCER / MONITOR
+      |
+      v
+connect_phase()
+  - connect ports
+  - assign virtual interfaces
+      |
+      v
+run_phase()
+  - drivers drive
+  - monitors observe
+      |
+      v
+END
